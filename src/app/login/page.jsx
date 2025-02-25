@@ -25,7 +25,7 @@ export default function LoginPage() {
     if (res) {
       router.push("/blogs/my");
     } else {
-      setError(err.response?.data?.message || "Failed to create blog");
+      setError(err.response?.data?.message || "Failed to login");
     }
   };
 
